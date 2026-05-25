@@ -165,7 +165,7 @@ export default function DailyMacroDashboard() {
                   <YAxis type="category" dataKey="name" width={96} tick={{ fill: "#334155", fontSize: 14 }} />
                   <Tooltip
                     cursor={{ fill: "rgba(148,163,184,0.12)" }}
-                    formatter={(value: any, name: string) => [value, name === "remaining" ? "Remaining" : "Current"]}
+                    formatter={(value: any, name: any) => [value, name === "remaining" ? "Remaining" : "Current"]}
                   />
                   <Bar dataKey="remaining" stackId="a" fill="#e2e8f0" />
                   <Bar dataKey="current" stackId="a" fill="#2563eb">
