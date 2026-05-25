@@ -169,7 +169,7 @@ export default function DailyMacroDashboard() {
                   />
                   <Bar dataKey="remaining" stackId="a" fill="#e2e8f0" />
                   <Bar dataKey="current" stackId="a" fill="#2563eb">
-                    <LabelList dataKey="percent" position="right" formatter={(value: number) => `${value}%`} />
+                    <LabelList dataKey="percent" position="right" formatter={(value: any) => `${value}%`} />
                   </Bar>
                 </BarChart>
               </ResponsiveContainer>
